@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Class Assignment 1: Design Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        h5 {
+            text-align: center;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .header {
+            width: 90%;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 2px;
+            border: 1px solid black;
+            
+        }
+
+        .header img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .menu {
+            width: 90%;
+            height: 65px;
+            margin: 0 auto;
+            margin-top: 2px;
+            border: 1px solid black;
+            background-color: #C0504D;
+        }
+
+        .menu h2 {
+            padding: 15px;
+        }
+
+        .main_content {
+            width: 90%;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 2px;
+            border: 1px solid black;
+        }
+
+        .footer {
+            width: 90%;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 2px;
+            border: 1px solid black;
+            background-color: #C0504D;
+        }
+
+        .footer h3 {
+            padding: 7px;
+        }
+
+        .sidebar {
+            width: 29%;
+            height: 400px;
+            margin: 0 auto;
+            float: left;
+/*            background-color: #4BACC6;*/
+
+        }
+
+        .sidebar marquee img {
+            width:400px;
+            height: 400px;
+                
+        }
+
+        .content {
+            width: 70.9%;
+            height: 400px;
+            margin: 0 auto;
+            float: left;
+            border-left: .5px solid black;
+            background-color: #8064A2;
+        }
+
+        .content table{
+            width: 98%;
+            text-align: center;
+            border: 1;
+        }
+        th{
+            padding: 5px;
+            border: 1px solid black;
+        }
+        td{
+          border: 0.1px solid black;
+        }
+        .t2 th{
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+           <img src="bg.jpg" alt="header">
+        </div>
+        <div class="menu">
+            <h2>Menu Part</h2>
+        </div>
+        <div class="main_content">
+            <div class="sidebar">
+               <marquee>
+                   <img src="s1.png" alt="">
+                   <img src="s2.jpg" alt="">
+                   <img src="s3.png" alt="">
+                   <img src="s4.jpg" alt="">
+               </marquee>
+                
+            </div>
+            <div class="content">
+               <table>
+                   <tr>
+                       <th>Class Routine</th>
+                   </tr>
+                </table>
+                  <table class="t2">
+                   <tr>
+                       <th>Day</th>
+                       <th>Subject</th>
+                       <th>Techaer name</th>
+                   </tr>
+                   <tr>
+                       <td rowspan="2">Sun <sub>day</sub><br> Tues<sup>day</sup></td>
+                       <td></td>
+                       <td></td>
+                       
+                   </tr>
+                   <tr>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                      <tr>
+                       <td rowspan="2"><del>Saturday/Friday</del><br>MW</td>
+                       <td></td>
+                       <td></td>
+                       
+                   </tr>
+                   <tr>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   
+               </table>
+            </div>
+        </div>
+        <div class="footer">
+            <h3><i>Footer</i></h3>
+        </div>
+    </div>
+</body>
+
+</html>
